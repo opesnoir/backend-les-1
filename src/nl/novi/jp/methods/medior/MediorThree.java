@@ -17,7 +17,17 @@ public class MediorThree {
     }
 
     public static void printName(String firstName, String lastName) {
-        System.out.println("Naam: " + firstName + " " + lastName);
+
+        // je zet eerst de string input om naar lowercase
+        String transformFirstName = firstName.toLowerCase();
+        String transformLastName = lastName.toLowerCase();
+
+        // daarna zet je de eerste letter om naar een hoofdletter (0,1) zegt van index 0 tot aan 1 omzetten in hoofdletter, en gebruik de methode transformfurstname (die de tekst omzet in lowercase) vanaf indexnummer 1 in.
+        transformFirstName = transformLastName.substring(0,1).toUpperCase() + transformFirstName.substring(1);
+        transformLastName = transformLastName.substring(0,1).toUpperCase() + transformLastName.substring(1);
+
+        // vervolgens print je de getransformeerde vorm van first- en die van last name:
+        System.out.println("Naam: " + transformFirstName + " " + transformLastName);
     }
 
     public static String firstLetterToUpperCase(String name) {

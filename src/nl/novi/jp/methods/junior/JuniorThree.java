@@ -8,9 +8,10 @@ package nl.novi.jp.methods.junior;
 
 public class JuniorThree {
     public static void main(String[] args) {
-
+        negativeNumberChecker(12);
     }
 
+    //als de parameter groter dan 0 is runt de if statement, als de parameter <0 is runt de else statement
     public static void negativeNumberChecker(int number) {
         if(number > 0) {
             System.out.println(number + " is een positief getal.");
